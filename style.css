@@ -8,14 +8,20 @@ a {
 	text-decoration: none;
 }
 
+.outerContainer {
+	width: 100%;
+
+}
+
 .mainContainer {
 	width:900px;
+	margin: 0 auto;
 }
 
 /*--nav bar--*/
 .leftNavBar {
 	width: 20%;
-	height: 500px;
+	height: 900px;
 	background-color: #058490;
 	float:left;
 	padding-top: 100px;
@@ -46,7 +52,7 @@ a {
 /*--Home content--*/
 .homeContainer {
 	width: 80%;
-	height: 600px;
+	height: 1000px;
 	background-color: #A1D3D8;
 	float:right;
 }
