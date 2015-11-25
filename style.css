@@ -1,0 +1,76 @@
+
+body {
+	font-family: "Georgia";
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.mainContainer {
+	width:900px;
+}
+
+/*--nav bar--*/
+.leftNavBar {
+	width: 20%;
+	height: 500px;
+	background-color: #058490;
+	float:left;
+	padding-top: 100px;
+}
+
+.navItem {
+	width: 80%;
+	height: 40px;
+	margin-left: 10%;
+	background-color: #ED7306;
+	border-radius: 20%;
+	margin-bottom: 25px;
+
+}
+
+.navItem:hover {
+	background-color: #FFA656;
+}
+
+.navItem p{
+	color: white;
+	text-align: center;
+	line-height: 40px;
+	font-size: 
+
+}
+
+/*--Home content--*/
+.homeContainer {
+	width: 80%;
+	height: 600px;
+	background-color: #A1D3D8;
+	float:right;
+}
+
+.nameText {
+	font-size: 40px;
+	font-style: bold;
+	text-align: center;
+}
+
+.photoDiv {
+	display: table;
+}
+
+.photo {
+	width:40%;
+	border-radius: 20%;
+	text-align: center;
+	margin-left: 300px;
+	margin-left: 30%;
+	border-style: 2px solid black;
+}
+
+.welcome {
+	margin: 25px;
+	text-align: center;
+}
