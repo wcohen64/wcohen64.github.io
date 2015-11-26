@@ -18,7 +18,7 @@ a {
 	margin: 0 auto;
 }
 
-/*--nav bar--*/
+/*-----nav bar------*/
 .leftNavBar {
 	width: 20%;
 	height: 900px;
@@ -49,7 +49,7 @@ a {
 
 }
 
-/*--Home content--*/
+/*--------Home content-------*/
 .homeContainer {
 	width: 80%;
 	height: 1000px;
@@ -79,4 +79,58 @@ a {
 .welcome {
 	margin: 25px;
 	text-align: center;
+}
+
+/*--------Contact content-------*/
+.contactContainer {
+	width: 80%;
+	height: 875px;
+	background-color: #A1D3D8;
+	float:right;
+	padding-top: 125px;
+}
+
+.contactMethods {
+	background-color: white;
+	width: 60%;
+	height: 20%;
+	margin: 0 auto;
+}
+
+.contactGreeting {
+	font-size: 20px;
+	padding: 25px;
+	text-align: center;
+}
+
+.iconDiv {
+	width: 40%;
+	margin: 0 auto;
+}
+
+.email {
+	color:#86888A;
+	
+}
+
+.email:hover {
+	color: red;
+}
+
+.linked {
+	color: #86888A;	
+	margin-left: 20px;
+}
+
+.linked:hover {
+	color: #0077B5;
+}
+
+.git {
+	color: #86888A;
+	margin-left: 20px;
+}
+
+.git:hover {
+	color: black;
 }
