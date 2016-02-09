@@ -62,13 +62,20 @@ a {
 }
 
 /*-----nav bar------*/
+
+
 .leftNavBar {
 	width: 180px;
 	height: 900px;
 	background-color: #058490;
 	float:left;
 	position: fixed;
-	padding-top: 100px;
+}
+
+.name{
+	height: 80px;
+	text-align: center;
+	padding-top: 30px;
 }
 
 .navItem {
@@ -77,6 +84,7 @@ a {
 	margin-left: 10%;
 	background-color: #e5954d;
 	margin-bottom: 25px;
+	border-radius:10px;
 }
 
 .selectedItem {
@@ -115,11 +123,10 @@ a {
 }
 
 .photo {
-	width:40%;
+	width:30%;
 	border-radius: 20%;
 	text-align: center;
-	margin-left: 300px;
-	margin-left: 30%;
+	margin-left: 35%;
 	border-style: 2px solid black;
 }
 
@@ -142,6 +149,9 @@ li {
 	font-size: 15px;
 	padding: 5px;
 }
+
+/*--------About content-------*/
+
 
 /*--------Contact content-------*/
 .contactContainer {
