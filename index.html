@@ -1,68 +1,152 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-    <title>Home</title>
+    <title>Willie Cohen</title>
 	<link rel="stylesheet" type="text/css" href="style.css"/>
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<script src="script.js"></script>
 </head>
 <body>
 	<div class="outerContainer">
-		<div class="mainContainer">
-			<div class="leftNavBar">
-				<div class="name">
-					WILLIE COHEN
-				</div>
-				<a href="index.html">
-					<div class="navItem selectedItem">
-						<p>Home</p>
-					</div>
-				</a>
-				<a href="about.html">
-					<div class="navItem">
-						<p>About</p>
-					</div>
-				</a>
-				<a href="projects.html">
-					<div class="navItem">
-						<p>Projects</p>
-					</div>
-				</a>
-				<a href="resume.pdf" target="blank">
-					<div class="navItem">
-						<p>Resume</p>
-					</div>
-				</a>
-				<a href="contact.html">
-					<div class="navItem">
-						<p>Contact</p>
-					</div>
-				</a>
+		<div class="topNavBar">
+			<div class="name">
+				WILLIE COHEN
 			</div>
-			<div class="homeContainer">
-				<div class="wrapper">
+			<div class="navButton selectedItem" id="home">
+				<p>Home</p>
+			</div>
+			<div class="navButton" id="about">
+				<p>About</p>
+			</div>
+			<div class="navButton" id="projects">
+				<p>Projects</p>
+			</div>
+			<a href="resume.pdf" target="blank">
+				<div class="navButton" id="resume">
+					<p>Resume</p>
+				</div>
+			</a>
+			<div class="navButton" id="contact">
+				<p>Contact</p>
+			</div>
+		</div>
+		<div class="mainContainer">
+				<!--         HOMEPAGE            -->
+				<div class="homeContainer" id="content-home">
+					<div class="navPadding"></div>
 					<p class="nameText">Willie Cohen</p>
 					<div class="photoDiv">
 						<img src="headClip.JPG" class="photo">
 					</div>
 					<p class="welcome">
-						Hello!  My name is William Cohen, but I usually go by Willie.  Welcome to my website!  
+						Hello!  My name is Willie, welcome to my website!  
 					</p>
-
 					<p class="creditsHeader">Acknowledgments</p>
 					<ul class="creditList">
 						<li><strong>GitHub</strong> for providing me with an excellent and free platform to host my website</li>
-						<li><strong>Casey Waldren</strong> for helping me learn some of the intricacies of creating a website</li>
+						<li><strong>Casey Waldren</strong> for helping me learn some of the intricacies of website routing</li>
 						<li><strong><a href="http://paletton.com/" target="blank">paletton.com</a></strong> for providing an great tool for web design</li>
 					</ul>
+				</div>
+				<!--         About            -->
+				<div class="homeContainer" id="content-about">
+					<div class="navPadding"></div>
+					<p class="nameText">Willie Cohen</p>
+					<div class="photoDiv">
+						<img src="headClip.JPG" class="photo">
+					</div>
+					<p class="welcome">
+						I am currently a student at the University of Rochester in my 4th year. I am majoring in Computer Science and Minoring in Business. I am also a part of the GEAR (Graduate Engineering At Rochester) program, which is a combined degree admission program. This means I will be graduating in 2017 with a Bachlors degree, and then in 2018 with a Masters degree in Computer Science.
+					</p>
+
+					<p class="welcome">
+						Currently I am looking for an internship for the summer of 2017. Ideally I am looking for a software engineering position.
 					</p>
 				</div>
+				<!--         Projects            -->
+				<div class="projectsContainer" id="content-projects">
+					<div class="navPadding"></div>
+					<div class="project">
+							<div class="projectTitle">
+								<a href="https://github.com/wcohen64" target="blank" class="projectName">
+									Cache Simulator
+								</a>
+								<div class="projectDate">May 2016</div>
+							</div>
+						<div class="projectDescription">
+							Cache simulator written in C for my Computer Organizations course. Varying block size, cache size, and associativity.  Finished project had to simulate read and write operations while correctly classifying cache hits and misses by type. 
+						</div>
+						<a href="CacheImg.JPG" target="blank">
+							<img src="CacheImg.JPG" class="projectImg">
+						</a>
+						<div style="clear:both"></div>
+					</div>
+					<div class="project">
+							<div class="projectTitle">
+								<a href="https://github.com/wcohen64/RayTracing" target="blank" class="projectName">
+									Ray Tracing
+								</a>
+								<div class="projectDate">November 2015</div>
+							</div>
+						<div class="projectDescription">
+							3D ray tracing project for my computer graphics course.  Assignment to create a chessboard simulation to showcase different features of ray tracing such as shadows, Blinn-Phong shading, reflective and refracive materials, and more.
+							<a href="https://github.com/wcohen64/RayTracing" target="blank">
+								<div class="gitDiscl">
+									<i class="fa fa-github"></i>
+									Source on GitHub
+								</div>
+							</a>
+						</div>
+						<a href="RayTracingProject.JPG" target="blank">
+							<img src="RayTracingProject.JPG" class="projectImg">
+						</a>
+						<div style="clear:both"></div>
+					</div>
+					<div class="project">
+						<div class="projectTitle">
+							<a href="https://github.com/cwaldren/Othello" target="blank" class="projectName">
+								Othello AI
+							</a>
+							<div class="projectDate">April 2015</div>
+						</div>
+						<div class="projectDescriptionNoPic">
+							Othello AI designed as an assignment for my Artificial Intelligence course.  This was a team project which I collaborated with Casey Waldren and Johnny Jacobs on. The AI uses a modified version of the negamax and alpha-beta pruning algorithms to play against a human or compter opponent.
+							<a href="https://github.com/cwaldren/Othello" target="blank">
+								<div class="gitDiscl">
+									<i class="fa fa-github"></i>
+									Source on GitHub
+								</div>
+							</a>
+						</div>
+						<div style="clear:both"></div>
+					</div>
+				</div>
+				<!--         Contact            -->
+				<div class="contactContainer" id="content-contact">
+					<div class="navPadding"></div>
+					<div class="contactMethods">
+						<div class="contactGreeting">
+							E-mail me, or find me on LinkedIn or GitHub!
+						</div>
+						<div class="iconDiv">
+							<a href="mailto:wcohen4@u.rochester.edu">	
+								<i class="fa fa-envelope-square fa-3x email"></i>
+							</a>
+							<a href="https://www.linkedin.com/in/williecohen" target="blank">
+								<i class="fa fa-linkedin-square fa-3x linked"></i>
+							</a>
+							<a href="https://github.com/wcohen64" target="blank">
+								<i class="fa fa-github-square fa-3x git"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--       FOOTER      -->
 				<div class="footer">
-					<div class="updateDate">Last Updated 2/21/2016</div>
+					<div class="updateDate">Last Updated 9/5/2016</div>
 				</div>
 			</div>
-		</div>
+			<div style="clear:both"></div>
 	</div>
-	
-
 </body>
